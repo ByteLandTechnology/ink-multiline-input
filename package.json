@@ -1,7 +1,7 @@
 {
-  "name": "ink-scroll-view",
+  "name": "ink-multiline-input",
   "version": "0.0.1",
-  "description": "A ScrollView component for Ink CLI applications",
+  "description": "A multiline text input component for Ink CLI applications",
   "keywords": [
     "react",
     "ink",
@@ -11,13 +11,13 @@
     "component",
     "ui"
   ],
-  "homepage": "https://www.byteland.app/opensource/ink-scroll-view",
+  "homepage": "https://www.byteland.app/opensource/ink-multiline-input",
   "bugs": {
-    "url": "https://github.com/ByteLandTechnology/ink-scroll-view/issues"
+    "url": "https://github.com/ByteLandTechnology/ink-multiline-input/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ByteLandTechnology/ink-scroll-view.git"
+    "url": "git+https://github.com/ByteLandTechnology/ink-multiline-input.git"
   },
   "license": "MIT",
   "author": "ByteLand Technology <github@byteland.app>",
@@ -26,16 +26,18 @@
   "types": "dist/index.d.ts",
   "source": "src/index.tsx",
   "files": [
+    "docs",
     "dist"
   ],
   "scripts": {
     "test": "vitest run",
     "prepare": "husky",
-    "build": "tsc"
+    "build": "tsup",
+    "docs": "typedoc --plugin typedoc-plugin-markdown --disableSources --out docs/api && prettier --write docs/api"
   },
   "peerDependencies": {
-    "ink": "^4.0.0",
-    "react": "^18.0.0"
+    "ink": ">=6",
+    "react": ">=19"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.2.0",
@@ -49,6 +51,8 @@
     "lint-staged": "^16.2.7",
     "prettier": "^3.7.4",
     "react": "^19.2.1",
-    "typescript": "^5.9.3"
+    "tsup": "^8.5.1",
+    "typedoc": "^0.28.15",
+    "typedoc-plugin-markdown": "^4.9.0"
   }
 }
