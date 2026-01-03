@@ -104,17 +104,16 @@ keyBindings={{
 }}
 ```
 
-### UncontrolledMultilineInput
+### ControlledMultilineInput
 
-For advanced use cases where you want to control the cursor position yourself, use `UncontrolledMultilineInput`:
+For advanced use cases where you want to control the cursor position yourself, use `ControlledMultilineInput`:
 
 ```tsx
-import { UncontrolledMultilineInput } from "ink-multiline-input";
+import { ControlledMultilineInput } from "ink-multiline-input";
 
-<UncontrolledMultilineInput
+<ControlledMultilineInput
   value={text}
   cursorIndex={cursorPos}
-  rows={5}
   maxRows={10}
   showCursor={true}
   focus={true}

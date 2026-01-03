@@ -6,10 +6,10 @@
 
 ## Interfaces
 
+- [ControlledMultilineInputProps](interfaces/ControlledMultilineInputProps.md)
 - [MultilineInputProps](interfaces/MultilineInputProps.md)
-- [UncontrolledMultilineInputProps](interfaces/UncontrolledMultilineInputProps.md)
 
 ## Functions
 
+- [ControlledMultilineInput](functions/ControlledMultilineInput.md)
 - [MultilineInput](functions/MultilineInput.md)
-- [UncontrolledMultilineInput](functions/UncontrolledMultilineInput.md)

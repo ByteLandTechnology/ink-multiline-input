@@ -27,7 +27,7 @@
 
 import React, { useState, useEffect, ReactNode } from "react";
 import { render, Text, Box, Spacer } from "ink";
-import { MultilineInput, UncontrolledMultilineInput } from "../src/index";
+import { MultilineInput, ControlledMultilineInput } from "../src/index";
 
 // =============================================================================
 // Configuration
@@ -354,7 +354,7 @@ const TypingDemo = () => {
  * 🧭 NavigationDemo - Demonstrates cursor navigation.
  *
  * This demo showcases:
- * 1. Using UncontrolledMultilineInput to control cursor position
+ * 1. Using ControlledMultilineInput to control cursor position
  * 2. Moving cursor left and right
  * 3. Moving cursor up and down between lines
  * 4. Line-based cursor positioning
@@ -444,7 +444,7 @@ const NavigationDemo = () => {
         <Text color="gray" dimColor>
           Cursor position: {cursorIndex} / {value.length}
         </Text>
-        <UncontrolledMultilineInput
+        <ControlledMultilineInput
           value={value}
           cursorIndex={cursorIndex}
           rows={5}
@@ -923,7 +923,7 @@ const ScrollingDemo = () => {
           Lines: {value.split("\n").filter(Boolean).length} | Cursor:{" "}
           {cursorIndex}
         </Text>
-        <UncontrolledMultilineInput
+        <ControlledMultilineInput
           value={value}
           cursorIndex={cursorIndex}
           rows={3}

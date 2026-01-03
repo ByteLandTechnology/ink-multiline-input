@@ -10,7 +10,7 @@
 
 ## Extends
 
-- [`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md)
+- [`ControlledMultilineInputProps`](ControlledMultilineInputProps.md)
 
 ## Properties
 
@@ -22,7 +22,7 @@ Current cursor position (0-indexed).
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`cursorIndex`](UncontrolledMultilineInputProps.md#cursorindex)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`cursorIndex`](ControlledMultilineInputProps.md#cursorindex)
 
 ---
 
@@ -35,7 +35,7 @@ Useful for routing input when multiple inputs exist.
 
 #### Overrides
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`focus`](UncontrolledMultilineInputProps.md#focus)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`focus`](ControlledMultilineInputProps.md#focus)
 
 ---
 
@@ -56,7 +56,7 @@ Only contains the position of the pasted text.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`highlight`](UncontrolledMultilineInputProps.md#highlight)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`highlight`](ControlledMultilineInputProps.md#highlight)
 
 ---
 
@@ -77,7 +77,7 @@ This style is applied to the entire logical line where the cursor is located.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`highlightStyle`](UncontrolledMultilineInputProps.md#highlightstyle)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`highlightStyle`](ControlledMultilineInputProps.md#highlightstyle)
 
 ---
 
@@ -129,7 +129,7 @@ Replace all chars and mask the value. Useful for password inputs.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`mask`](UncontrolledMultilineInputProps.md#mask)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`mask`](ControlledMultilineInputProps.md#mask)
 
 ---
 
@@ -141,7 +141,7 @@ Replace all chars and mask the value. Useful for password inputs.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`maxRows`](UncontrolledMultilineInputProps.md#maxrows)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`maxRows`](ControlledMultilineInputProps.md#maxrows)
 
 ---
 
@@ -189,7 +189,7 @@ Text to display when `value` is empty.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`placeholder`](UncontrolledMultilineInputProps.md#placeholder)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`placeholder`](ControlledMultilineInputProps.md#placeholder)
 
 ---
 
@@ -202,7 +202,7 @@ Changing this value forces the component to re-render.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`refreshKey`](UncontrolledMultilineInputProps.md#refreshkey)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`refreshKey`](ControlledMultilineInputProps.md#refreshkey)
 
 ---
 
@@ -214,7 +214,7 @@ Changing this value forces the component to re-render.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`rows`](UncontrolledMultilineInputProps.md#rows)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`rows`](ControlledMultilineInputProps.md#rows)
 
 ---
 
@@ -226,7 +226,7 @@ Whether to show cursor and allow navigation inside text input with arrow keys.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`showCursor`](UncontrolledMultilineInputProps.md#showcursor)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`showCursor`](ControlledMultilineInputProps.md#showcursor)
 
 ---
 
@@ -238,7 +238,7 @@ Number of spaces to expand tabs to when displaying. Default: 4.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`tabSize`](UncontrolledMultilineInputProps.md#tabsize)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`tabSize`](ControlledMultilineInputProps.md#tabsize)
 
 ---
 
@@ -250,7 +250,7 @@ Style to apply to the text.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`textStyle`](UncontrolledMultilineInputProps.md#textstyle)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`textStyle`](ControlledMultilineInputProps.md#textstyle)
 
 ---
 
@@ -285,4 +285,4 @@ Useful for routing input to specific components when multiple inputs exist.
 
 #### Inherited from
 
-[`UncontrolledMultilineInputProps`](UncontrolledMultilineInputProps.md).[`value`](UncontrolledMultilineInputProps.md#value)
+[`ControlledMultilineInputProps`](ControlledMultilineInputProps.md).[`value`](ControlledMultilineInputProps.md#value)

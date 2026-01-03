@@ -3,7 +3,7 @@ import { Box, Spacer, Text, type TextProps } from "ink";
 import { expandTabs, normalizeLineEndings } from "./utils";
 import { MeasureBox } from "./MeasureBox";
 
-export interface UncontrolledMultilineInputProps {
+export interface ControlledMultilineInputProps {
   /**
    * 📝 The current value to display.
    */
@@ -70,14 +70,14 @@ interface StyledText {
 }
 
 /**
- * ⌨️ An uncontrolled multi-line text input component for Ink applications.
+ * ⌨️ A controlled multi-line text input component for Ink applications.
  *
  * This component is responsible only for displaying the input content and cursor.
  * It doesn't handle any input logic itself.
  *
  * @param props - ⚙️ The component props.
  */
-export const UncontrolledMultilineInput = ({
+export const ControlledMultilineInput = ({
   value,
   rows,
   maxRows,
@@ -91,7 +91,7 @@ export const UncontrolledMultilineInput = ({
   cursorIndex = 0,
   highlight,
   refreshKey,
-}: UncontrolledMultilineInputProps) => {
+}: ControlledMultilineInputProps) => {
   const [scrollOffset, setScrollOffset] = useState(0);
   const [contentHeight, setContentHeight] = useState(0);
   const [markerHeight, setMarkerHeight] = useState(0);

@@ -11,7 +11,7 @@
 ⌨️ A multi-line text input component for Ink applications.
 
 This is the controlled version that handles input logic internally.
-It uses UncontrolledMultilineInput for rendering.
+It uses ControlledMultilineInput for rendering.
 
 This component supports:
 

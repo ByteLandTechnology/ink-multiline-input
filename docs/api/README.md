@@ -15,6 +15,28 @@
 - 🎭 **Mask Support**: Hide text with mask characters for password inputs.
 - 📏 **Flexible Sizing**: Control visible rows with `rows` and `maxRows`.
 
+## Demo 🎬
+
+### 📝 Typing
+
+![Typing Demo](_media/typing.svg)
+
+### 🧭 Navigation
+
+![Navigation Demo](_media/navigation.svg)
+
+### ✂️ Editing
+
+![Editing Demo](_media/editing.svg)
+
+### 🎨 Styling & Mask
+
+![Styling Demo](_media/styling.svg)
+
+### 📜 Scrolling
+
+![Scrolling Demo](_media/scrolling.svg)
+
 ## Installation 📦
 
 ```bash
@@ -86,17 +108,16 @@ keyBindings={{
 }}
 ```
 
-### UncontrolledMultilineInput
+### ControlledMultilineInput
 
-For advanced use cases where you want to control the cursor position yourself, use `UncontrolledMultilineInput`:
+For advanced use cases where you want to control the cursor position yourself, use `ControlledMultilineInput`:
 
 ```tsx
-import { UncontrolledMultilineInput } from "ink-multiline-input";
+import { ControlledMultilineInput } from "ink-multiline-input";
 
-<UncontrolledMultilineInput
+<ControlledMultilineInput
   value={text}
   cursorIndex={cursorPos}
-  rows={5}
   maxRows={10}
   showCursor={true}
   focus={true}

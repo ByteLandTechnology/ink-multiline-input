@@ -2,9 +2,9 @@
 
 ---
 
-[ink-multiline-input](../globals.md) / UncontrolledMultilineInputProps
+[ink-multiline-input](../globals.md) / ControlledMultilineInputProps
 
-# Interface: UncontrolledMultilineInputProps
+# Interface: ControlledMultilineInputProps
 
 ## Extended by
 

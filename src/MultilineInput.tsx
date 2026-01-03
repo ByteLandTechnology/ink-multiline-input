@@ -1,12 +1,12 @@
 import { useState, useEffect, useMemo } from "react";
 import { Key, useInput } from "ink";
 import {
-  UncontrolledMultilineInput,
-  UncontrolledMultilineInputProps,
-} from "./UncontrolledMultilineInput";
+  ControlledMultilineInput,
+  ControlledMultilineInputProps,
+} from "./ControlledMultilineInput";
 import { normalizeLineEndings } from "./utils";
 
-export interface MultilineInputProps extends UncontrolledMultilineInputProps {
+export interface MultilineInputProps extends ControlledMultilineInputProps {
   /**
    * 🔄 Callback function triggered when the value changes.
    */
@@ -51,7 +51,7 @@ export interface MultilineInputProps extends UncontrolledMultilineInputProps {
  * ⌨️ A multi-line text input component for Ink applications.
  *
  * This is the controlled version that handles input logic internally.
- * It uses UncontrolledMultilineInput for rendering.
+ * It uses ControlledMultilineInput for rendering.
  *
  * This component supports:
  * - ↕️ Vertical scrolling
@@ -71,7 +71,7 @@ export const MultilineInput = ({
   focus = true,
   useCustomInput = (inputHandler, isActive) =>
     useInput(inputHandler, { isActive: isActive }),
-  ...uncontrolledProps
+  ...controlledProps
 }: MultilineInputProps) => {
   // State for cursor position and paste tracking
   const [cursorIndex, setCursorIndex] = useState(value.length);
@@ -248,10 +248,10 @@ export const MultilineInput = ({
     return undefined;
   }, [cursorIndex, pasteLength, highlightPastedText]);
 
-  // Render using UncontrolledMultilineInput
+  // Render using ControlledMultilineInput
   return (
-    <UncontrolledMultilineInput
-      {...uncontrolledProps}
+    <ControlledMultilineInput
+      {...controlledProps}
       value={value}
       cursorIndex={cursorIndex}
       highlight={highlight}
