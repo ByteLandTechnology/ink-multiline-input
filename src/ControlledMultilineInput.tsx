@@ -101,10 +101,13 @@ export const ControlledMultilineInput = ({
     (text: string, isPlaceholder: boolean = false): string => {
       const normalized = normalizeLineEndings(text);
       // 🎭 Apply mask: replace all chars except newlines with mask char
+      let result = normalized;
       if (!isPlaceholder && mask) {
-        return normalized.replace(/[^\n]/g, mask);
+        result = normalized.replace(/[^\n]/g, mask);
+      } else {
+        result = expandTabs(normalized, tabSize);
       }
-      return expandTabs(normalized, tabSize);
+      return result;
     },
     [tabSize, mask],
   );
